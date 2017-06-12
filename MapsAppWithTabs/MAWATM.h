@@ -15,7 +15,6 @@
 @property (nonatomic,strong) NSString *placeId;
 @property (nonatomic,strong) NSString *address;
 @property (nonatomic,strong) NSString *name;
-@property (nonatomic) CLLocationCoordinate2D coordinate;
-
+@property (nonatomic,strong) NSString *coordinate;
 
 @end
