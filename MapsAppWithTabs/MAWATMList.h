@@ -14,4 +14,5 @@
 - (instancetype)initWithArray:(NSArray<MAWATM *> *)atms;
 - (MAWATM*)objectAtIndexedSubscript:(NSUInteger)index;
 - (NSUInteger)count;
+@property(nonatomic, copy, readwrite) NSArray *atms;
 @end

@@ -9,7 +9,6 @@
 #import "MAWATMList.h"
 
 @interface MAWATMList ()
-@property(nonatomic, copy, readwrite) NSArray *atms;
 @end
 
 @implementation MAWATMList
