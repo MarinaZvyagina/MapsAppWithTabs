@@ -7,9 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+@import CoreLocation;
 
 @protocol MAWViewManager;
-@class CLLocationCoordinate2D;
 
 @protocol MAWMapDataManager <NSObject>
 

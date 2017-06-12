@@ -17,9 +17,7 @@
 NSString * kAPIKey = @"AIzaSyAPEMpW1XZFEiBr3387C47FaPwR1D57rdk";
 
 -(void)getATMsWithCoordinates:(CLLocationCoordinate2D *)coordinate AndViewManager:(id<MAWViewManager>) viewManager {
-    
-    
-    NSString*url = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=%f,%f&radius=500&types=atm&key=%@",coordinate->latitude, coordinate->longitude ,kAPIKey];
+    NSString*url = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=%f,%f&radius=5000&types=atm&key=%@",coordinate->latitude, coordinate->longitude ,kAPIKey];
     NSURLRequest *nsurlRequest=[NSURLRequest requestWithURL:[NSURL URLWithString:url]];
     
     NSURLSessionConfiguration * defaultConfiguration = [NSURLSessionConfiguration defaultSessionConfiguration];
@@ -43,7 +41,7 @@ NSString * kAPIKey = @"AIzaSyAPEMpW1XZFEiBr3387C47FaPwR1D57rdk";
         MAWATM *atm = [MAWATM new];
         atm.atmId = atmId;
         atm.placeId = placeId;
-        atm.coordinate = coordinate;
+        atm.coordinate = [NSString stringWithFormat:@"%f,%f", coordinate.latitude, coordinate.longitude];
         atm.address = address;
         atm.name = name;
         return atm;

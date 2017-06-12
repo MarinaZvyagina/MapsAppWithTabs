@@ -7,9 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-@import CoreLocation;
 #import "MAWViewManager.h"
+#import "MAWMapDataManager.h"
+@import CoreLocation;
 
-@interface MAWGooglePlacesData : NSObject
+@interface MAWGooglePlacesData : NSObject <MAWMapDataManager>
 -(void)getATMsWithCoordinates:(CLLocationCoordinate2D *)coordinate AndViewManager:(id<MAWViewManager>) viewManager;
 @end
