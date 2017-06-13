@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MAWViewManager.h"
 @import MapKit;
 @import CoreLocation;
 
 @protocol MAWMapDataManager;
 
-@interface MAWTMapViewController : UIViewController
+@interface MAWTMapViewController : UIViewController <MAWViewManager>
 -(instancetype)initWithDataManager:(id<MAWMapDataManager>) dataManager;
 //- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation;
 @end

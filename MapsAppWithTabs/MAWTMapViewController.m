@@ -8,17 +8,17 @@
 
 #import "MAWTMapViewController.h"
 #import "MAWMapDataManager.h"
-#import "MAWViewManager.h"
 #import "MAWATMList.h"
 #import "MAWATM.h"
 
 
-@interface MAWTMapViewController () <MKMapViewDelegate, MAWViewManager, CLLocationManagerDelegate>
+@interface MAWTMapViewController () <MKMapViewDelegate, CLLocationManagerDelegate>
 @property (nonatomic, strong) MKMapView *mapView;
 @property (nonatomic, strong) id<MAWMapDataManager> dataManager;
 @property (nonatomic, strong) MAWATMList * atms;
 @property (nonatomic, strong) UIButton * buttonPlus;
 @property (nonatomic, strong) UIButton * buttonMinus;
+@property (nonatomic, strong) UIButton * buttonNavigationTriangle;
 @end
 
 @implementation MAWTMapViewController
@@ -32,6 +32,10 @@ double delta = 0.05;
         self.dataManager = dataManager;
     }
     return self;
+}
+
+-(MAWATMList *)getCurrentAtms {
+    return self.atms;
 }
 
 -(void)updateViewWithATMs:(MAWATMList *)atms {
@@ -61,22 +65,29 @@ double delta = 0.05;
     
     self.buttonPlus = [[UIButton alloc] initWithFrame:CGRectMake(5, 200, 30, 50)];
     self.buttonMinus = [[UIButton alloc] initWithFrame:CGRectMake(5, 250, 30, 50)];
+    self.buttonNavigationTriangle = [[UIButton alloc] initWithFrame:CGRectMake(self.view.bounds.size.width-40, self.view.bounds.size.height - 100, 30, 30)];
     self.buttonPlus.backgroundColor = [UIColor whiteColor];
     self.buttonMinus.backgroundColor = [UIColor whiteColor];
+    self.buttonNavigationTriangle.backgroundColor = [UIColor whiteColor];
     self.buttonPlus.alpha = 0.6;
     self.buttonMinus.alpha = 0.6;
+    self.buttonNavigationTriangle.alpha = 0.7;
     [self.buttonPlus setTitle:@"+" forState:UIControlStateNormal];
     [self.buttonPlus setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.buttonMinus setTitle:@"-" forState:UIControlStateNormal];
     [self.buttonMinus setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    NSString *imageFilePath = [[NSBundle mainBundle] pathForResource:@"65346" ofType:@"png"];
+    UIImage *imageObject = [UIImage imageWithContentsOfFile:imageFilePath];
+    [self.buttonNavigationTriangle setImage:imageObject forState:UIControlStateNormal];
+
+    
     
     [self.buttonPlus addTarget:self action:@selector(buttonPlusPushed) forControlEvents:UIControlEventTouchUpInside];
     [self.buttonMinus addTarget:self action:@selector(buttonMinusPushed) forControlEvents:UIControlEventTouchUpInside];
+    [self.buttonNavigationTriangle addTarget:self action:@selector(buttonNavigationPushed) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.buttonPlus];
     [self.view addSubview:self.buttonMinus];
-    
-  //  self.scale
-    
+    [self.view addSubview:self.buttonNavigationTriangle];
     CLLocationCoordinate2D coordinate = self.mapView.userLocation.coordinate;
     [self.dataManager getATMsWithCoordinates:&coordinate AndViewManager:self];
     self.mapView.mapType = MKMapTypeStandard;
@@ -87,7 +98,6 @@ double delta = 0.05;
     if (delta < 0.000001) {
         delta = 0.000001;
     }
-    NSLog(@"delta=%f",delta);
     [self setRegionForCoordinate:self.mapView.userLocation.coordinate];
 }
 
@@ -96,7 +106,11 @@ double delta = 0.05;
     if (delta > 150.0) {
         delta = 150.0;
     }
-    NSLog(@"delta=%f",delta);
+    [self setRegionForCoordinate:self.mapView.userLocation.coordinate];
+}
+
+
+-(void)buttonNavigationPushed {
     [self setRegionForCoordinate:self.mapView.userLocation.coordinate];
 }
 
