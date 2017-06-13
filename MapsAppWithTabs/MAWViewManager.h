@@ -11,4 +11,5 @@
 @class MAWATMList;
 @protocol MAWViewManager <NSObject>
 -(void)updateViewWithATMs:(MAWATMList *)atms;
+-(MAWATMList *)getCurrentAtms;
 @end
