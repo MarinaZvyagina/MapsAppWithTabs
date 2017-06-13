@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1442BE121EEDDE980078317D /* MAWATM.m in Sources */ = {isa = PBXBuildFile; fileRef = 1442BE111EEDDE980078317D /* MAWATM.m */; };
+		1442BE161EEDE1090078317D /* MAWATMList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1442BE151EEDE1090078317D /* MAWATMList.m */; };
+		1442BE2B1EEFD3D00078317D /* 65346.png in Resources */ = {isa = PBXBuildFile; fileRef = 1442BE281EEFD3D00078317D /* 65346.png */; };
+		1442BE2C1EEFD3D00078317D /* list.png in Resources */ = {isa = PBXBuildFile; fileRef = 1442BE291EEFD3D00078317D /* list.png */; };
+		1442BE2D1EEFD3D00078317D /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = 1442BE2A1EEFD3D00078317D /* map.png */; };
+		14458CA61EE9EC9000BC2A4D /* MAWGooglePlacesData.m in Sources */ = {isa = PBXBuildFile; fileRef = 14458CA51EE9EC9000BC2A4D /* MAWGooglePlacesData.m */; };
+		14458CA91EE9EF2E00BC2A4D /* MAWTTableTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14458CA81EE9EF2E00BC2A4D /* MAWTTableTableViewController.m */; };
 		1479E7FD1EC49599008836FA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1479E7FC1EC49599008836FA /* main.m */; };
 		1479E8001EC49599008836FA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1479E7FF1EC49599008836FA /* AppDelegate.m */; };
 		1479E8031EC49599008836FA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1479E8021EC49599008836FA /* ViewController.m */; };
@@ -14,6 +21,10 @@
 		1479E8081EC49599008836FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1479E8071EC49599008836FA /* Assets.xcassets */; };
 		1479E80B1EC49599008836FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1479E8091EC49599008836FA /* LaunchScreen.storyboard */; };
 		1479E8161EC49599008836FA /* MapsAppWithTabsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1479E8151EC49599008836FA /* MapsAppWithTabsTests.m */; };
+		1479E8221EC49BB1008836FA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1479E8211EC49BB1008836FA /* CoreLocation.framework */; };
+		1479E8241EC49BB7008836FA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1479E8231EC49BB7008836FA /* MapKit.framework */; };
+		1479E8271EC49BE5008836FA /* MAWTMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1479E8261EC49BE5008836FA /* MAWTMapViewController.m */; };
+		5175C6934B861300D3DC6A04 /* libPods-MapsAppWithTabs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 800C4A3B32D6C92961B84EB8 /* libPods-MapsAppWithTabs.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +38,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1442BE101EEDDE980078317D /* MAWATM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAWATM.h; sourceTree = "<group>"; };
+		1442BE111EEDDE980078317D /* MAWATM.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAWATM.m; sourceTree = "<group>"; };
+		1442BE141EEDE1090078317D /* MAWATMList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAWATMList.h; sourceTree = "<group>"; };
+		1442BE151EEDE1090078317D /* MAWATMList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAWATMList.m; sourceTree = "<group>"; };
+		1442BE1A1EEDEB1B0078317D /* MAWViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAWViewManager.h; sourceTree = "<group>"; };
+		1442BE281EEFD3D00078317D /* 65346.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 65346.png; sourceTree = SOURCE_ROOT; };
+		1442BE291EEFD3D00078317D /* list.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list.png; sourceTree = SOURCE_ROOT; };
+		1442BE2A1EEFD3D00078317D /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = SOURCE_ROOT; };
+		14458B8F1ECDF1D000BC2A4D /* MAWMapDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAWMapDataManager.h; sourceTree = "<group>"; };
+		14458CA41EE9EC9000BC2A4D /* MAWGooglePlacesData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAWGooglePlacesData.h; sourceTree = "<group>"; };
+		14458CA51EE9EC9000BC2A4D /* MAWGooglePlacesData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAWGooglePlacesData.m; sourceTree = "<group>"; };
+		14458CA81EE9EF2E00BC2A4D /* MAWTTableTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAWTTableTableViewController.m; sourceTree = "<group>"; };
 		1479E7F81EC49599008836FA /* MapsAppWithTabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapsAppWithTabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1479E7FC1EC49599008836FA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1479E7FE1EC49599008836FA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +63,14 @@
 		1479E8111EC49599008836FA /* MapsAppWithTabsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapsAppWithTabsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1479E8151EC49599008836FA /* MapsAppWithTabsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapsAppWithTabsTests.m; sourceTree = "<group>"; };
 		1479E8171EC49599008836FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1479E8211EC49BB1008836FA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1479E8231EC49BB7008836FA /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		1479E8251EC49BE5008836FA /* MAWTMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAWTMapViewController.h; sourceTree = "<group>"; };
+		1479E8261EC49BE5008836FA /* MAWTMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAWTMapViewController.m; sourceTree = "<group>"; };
+		1479E8281EC4B116008836FA /* MAWTTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAWTTableTableViewController.h; sourceTree = "<group>"; };
+		69E8FEA9799572FC1EC4CEB2 /* Pods-MapsAppWithTabs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapsAppWithTabs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapsAppWithTabs/Pods-MapsAppWithTabs.debug.xcconfig"; sourceTree = "<group>"; };
+		800C4A3B32D6C92961B84EB8 /* libPods-MapsAppWithTabs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapsAppWithTabs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE3BD47D59BEF13F3EFFC45C /* Pods-MapsAppWithTabs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapsAppWithTabs.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapsAppWithTabs/Pods-MapsAppWithTabs.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +78,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1479E8241EC49BB7008836FA /* MapKit.framework in Frameworks */,
+				1479E8221EC49BB1008836FA /* CoreLocation.framework in Frameworks */,
+				5175C6934B861300D3DC6A04 /* libPods-MapsAppWithTabs.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +94,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1442BE131EEDDEA10078317D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1442BE181EEDE66E0078317D /* ATM */,
+				1442BE171EEDE6650078317D /* ATMList */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1442BE171EEDE6650078317D /* ATMList */ = {
+			isa = PBXGroup;
+			children = (
+				1442BE141EEDE1090078317D /* MAWATMList.h */,
+				1442BE151EEDE1090078317D /* MAWATMList.m */,
+			);
+			name = ATMList;
+			sourceTree = "<group>";
+		};
+		1442BE181EEDE66E0078317D /* ATM */ = {
+			isa = PBXGroup;
+			children = (
+				1442BE101EEDDE980078317D /* MAWATM.h */,
+				1442BE111EEDDE980078317D /* MAWATM.m */,
+			);
+			name = ATM;
+			sourceTree = "<group>";
+		};
+		1442BE191EEDEAEF0078317D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1479E8011EC49599008836FA /* ViewController.h */,
+				1479E8021EC49599008836FA /* ViewController.m */,
+				1479E82B1EC4B11F008836FA /* Table */,
+				14458B8B1ECDF13300BC2A4D /* Map */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		14458B8B1ECDF13300BC2A4D /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				1442BE1A1EEDEB1B0078317D /* MAWViewManager.h */,
+				1479E8251EC49BE5008836FA /* MAWTMapViewController.h */,
+				1479E8261EC49BE5008836FA /* MAWTMapViewController.m */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		14458CA71EE9EC9800BC2A4D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				14458B8F1ECDF1D000BC2A4D /* MAWMapDataManager.h */,
+				14458CA41EE9EC9000BC2A4D /* MAWGooglePlacesData.h */,
+				14458CA51EE9EC9000BC2A4D /* MAWGooglePlacesData.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		1479E7EF1EC49599008836FA = {
 			isa = PBXGroup;
 			children = (
 				1479E7FA1EC49599008836FA /* MapsAppWithTabs */,
 				1479E8141EC49599008836FA /* MapsAppWithTabsTests */,
 				1479E7F91EC49599008836FA /* Products */,
+				1479E8201EC49BB1008836FA /* Frameworks */,
+				4181129D783A380DC72C60ED /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,12 +175,15 @@
 		1479E7FA1EC49599008836FA /* MapsAppWithTabs */ = {
 			isa = PBXGroup;
 			children = (
+				1442BE131EEDDEA10078317D /* Model */,
+				14458CA71EE9EC9800BC2A4D /* Data */,
+				1442BE191EEDEAEF0078317D /* View */,
 				1479E7FE1EC49599008836FA /* AppDelegate.h */,
 				1479E7FF1EC49599008836FA /* AppDelegate.m */,
-				1479E8011EC49599008836FA /* ViewController.h */,
-				1479E8021EC49599008836FA /* ViewController.m */,
-				1479E8041EC49599008836FA /* Main.storyboard */,
 				1479E8071EC49599008836FA /* Assets.xcassets */,
+				1442BE281EEFD3D00078317D /* 65346.png */,
+				1442BE291EEFD3D00078317D /* list.png */,
+				1442BE2A1EEFD3D00078317D /* map.png */,
 				1479E8091EC49599008836FA /* LaunchScreen.storyboard */,
 				1479E80C1EC49599008836FA /* Info.plist */,
 				1479E7FB1EC49599008836FA /* Supporting Files */,
@@ -97,6 +194,7 @@
 		1479E7FB1EC49599008836FA /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1479E8041EC49599008836FA /* Main.storyboard */,
 				1479E7FC1EC49599008836FA /* main.m */,
 			);
 			name = "Supporting Files";
@@ -111,6 +209,34 @@
 			path = MapsAppWithTabsTests;
 			sourceTree = "<group>";
 		};
+		1479E8201EC49BB1008836FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1479E8231EC49BB7008836FA /* MapKit.framework */,
+				1479E8211EC49BB1008836FA /* CoreLocation.framework */,
+				800C4A3B32D6C92961B84EB8 /* libPods-MapsAppWithTabs.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1479E82B1EC4B11F008836FA /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				1479E8281EC4B116008836FA /* MAWTTableTableViewController.h */,
+				14458CA81EE9EF2E00BC2A4D /* MAWTTableTableViewController.m */,
+			);
+			name = Table;
+			sourceTree = "<group>";
+		};
+		4181129D783A380DC72C60ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				69E8FEA9799572FC1EC4CEB2 /* Pods-MapsAppWithTabs.debug.xcconfig */,
+				FE3BD47D59BEF13F3EFFC45C /* Pods-MapsAppWithTabs.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +244,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1479E81A1EC49599008836FA /* Build configuration list for PBXNativeTarget "MapsAppWithTabs" */;
 			buildPhases = (
+				3B274BB7DCB41F76CDC11A69 /* [CP] Check Pods Manifest.lock */,
 				1479E7F41EC49599008836FA /* Sources */,
 				1479E7F51EC49599008836FA /* Frameworks */,
 				1479E7F61EC49599008836FA /* Resources */,
+				0028512ED54544C2E27AE0D6 /* [CP] Embed Pods Frameworks */,
+				59A9D5F5BC354169BCD0E4EE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,6 +289,7 @@
 				TargetAttributes = {
 					1479E7F71EC49599008836FA = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = Q4LCPSKEPX;
 						ProvisioningStyle = Automatic;
 					};
 					1479E8101EC49599008836FA = {
@@ -193,6 +323,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1442BE2D1EEFD3D00078317D /* map.png in Resources */,
+				1442BE2B1EEFD3D00078317D /* 65346.png in Resources */,
+				1442BE2C1EEFD3D00078317D /* list.png in Resources */,
 				1479E80B1EC49599008836FA /* LaunchScreen.storyboard in Resources */,
 				1479E8081EC49599008836FA /* Assets.xcassets in Resources */,
 				1479E8061EC49599008836FA /* Main.storyboard in Resources */,
@@ -208,14 +341,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0028512ED54544C2E27AE0D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapsAppWithTabs/Pods-MapsAppWithTabs-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B274BB7DCB41F76CDC11A69 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		59A9D5F5BC354169BCD0E4EE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MapsAppWithTabs/Pods-MapsAppWithTabs-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1479E7F41EC49599008836FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1442BE121EEDDE980078317D /* MAWATM.m in Sources */,
+				1479E8271EC49BE5008836FA /* MAWTMapViewController.m in Sources */,
 				1479E8031EC49599008836FA /* ViewController.m in Sources */,
 				1479E8001EC49599008836FA /* AppDelegate.m in Sources */,
+				1442BE161EEDE1090078317D /* MAWATMList.m in Sources */,
+				14458CA61EE9EC9000BC2A4D /* MAWGooglePlacesData.m in Sources */,
 				1479E7FD1EC49599008836FA /* main.m in Sources */,
+				14458CA91EE9EF2E00BC2A4D /* MAWTTableTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,9 +537,12 @@
 		};
 		1479E81B1EC49599008836FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 69E8FEA9799572FC1EC4CEB2 /* Pods-MapsAppWithTabs.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q4LCPSKEPX;
 				INFOPLIST_FILE = MapsAppWithTabs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.devTeam.MapsAppWithTabs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -362,9 +551,12 @@
 		};
 		1479E81C1EC49599008836FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE3BD47D59BEF13F3EFFC45C /* Pods-MapsAppWithTabs.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q4LCPSKEPX;
 				INFOPLIST_FILE = MapsAppWithTabs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.devTeam.MapsAppWithTabs;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -414,6 +606,7 @@
 				1479E81C1EC49599008836FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1479E81D1EC49599008836FA /* Build configuration list for PBXNativeTarget "MapsAppWithTabsTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +615,7 @@
 				1479E81F1EC49599008836FA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
