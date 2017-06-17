@@ -41,6 +41,7 @@ double delta = 0.05;
 -(void)updateViewWithATMs:(MAWATMList *)atms {
     self.atms = atms;
     [self showAllAtms];
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"locationChanged" object:nil];
 }
 
 - (void)viewDidLoad {
@@ -111,12 +112,16 @@ double delta = 0.05;
 
 
 -(void)buttonNavigationPushed {
+    CLLocationCoordinate2D location = self.mapView.userLocation.coordinate;
+    [self.dataManager getATMsWithCoordinates:&location AndViewManager:self];
     [self setRegionForCoordinate:self.mapView.userLocation.coordinate];
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
 {
-    if ((newLocation.coordinate.latitude - oldLocation.coordinate.latitude < 0.001) && (newLocation.coordinate.longitude - oldLocation.coordinate.longitude < 0.001) ) {
+    CLLocationDegrees latitudeDelta = fabs(newLocation.coordinate.latitude - oldLocation.coordinate.latitude);
+    CLLocationDegrees longitudeDelta = fabs(newLocation.coordinate.longitude - oldLocation.coordinate.longitude);
+    if ((latitudeDelta < 0.00001) && (longitudeDelta < 0.00001) ) {
         return;
     }
     CLLocationCoordinate2D location = newLocation.coordinate;
@@ -138,7 +143,6 @@ double delta = 0.05;
     for (MAWATM *atm in self.atms.atms) {
         NSString * coordinate = atm.coordinate;
         NSArray* myArray = [coordinate  componentsSeparatedByString:@","];
-        
         NSString* firstString = myArray[0];
         NSString* secondString = myArray[1];
         CLLocationCoordinate2D coord = CLLocationCoordinate2DMake([firstString doubleValue], [secondString doubleValue]);
@@ -153,7 +157,7 @@ double delta = 0.05;
 }
 
 -(void) setAnnotationWithCoordinate:(CLLocationCoordinate2D*)coordinate Name:(NSString *)name AndAddress:(NSString *)address{
-    CLLocationCoordinate2D annotationCoord;//[self addressLocation] ;
+    CLLocationCoordinate2D annotationCoord;
     
     annotationCoord.latitude = coordinate->latitude;
     annotationCoord.longitude = coordinate->longitude;

@@ -29,8 +29,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.atms = [self.viewManager getCurrentAtms];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(reloadTable)
+                                                 name:@"locationChanged" object:nil];
 }
 
+- (void) dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+-(void)reloadTable {
+    self.atms = [self.viewManager getCurrentAtms];
+    [self.tableView reloadData];
+}
 
 #pragma mark - Table view data source
 
