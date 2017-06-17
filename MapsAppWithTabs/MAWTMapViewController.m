@@ -112,8 +112,6 @@ double delta = 0.05;
 
 
 -(void)buttonNavigationPushed {
-    CLLocationCoordinate2D location = self.mapView.userLocation.coordinate;
-    [self.dataManager getATMsWithCoordinates:&location AndViewManager:self];
     [self setRegionForCoordinate:self.mapView.userLocation.coordinate];
 }
 
