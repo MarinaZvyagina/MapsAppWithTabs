@@ -24,6 +24,10 @@
 		1479E8221EC49BB1008836FA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1479E8211EC49BB1008836FA /* CoreLocation.framework */; };
 		1479E8241EC49BB7008836FA /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1479E8231EC49BB7008836FA /* MapKit.framework */; };
 		1479E8271EC49BE5008836FA /* MAWTMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1479E8261EC49BE5008836FA /* MAWTMapViewController.m */; };
+		14A359611F0700BB0090933C /* bank01.png in Resources */ = {isa = PBXBuildFile; fileRef = 14A3595E1F0700BB0090933C /* bank01.png */; };
+		14A359621F0700BB0090933C /* bank02.png in Resources */ = {isa = PBXBuildFile; fileRef = 14A3595F1F0700BB0090933C /* bank02.png */; };
+		14A359631F0700BB0090933C /* bank03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 14A359601F0700BB0090933C /* bank03.jpg */; };
+		14A359651F070C820090933C /* route.png in Resources */ = {isa = PBXBuildFile; fileRef = 14A359641F070C820090933C /* route.png */; };
 		5175C6934B861300D3DC6A04 /* libPods-MapsAppWithTabs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 800C4A3B32D6C92961B84EB8 /* libPods-MapsAppWithTabs.a */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +72,10 @@
 		1479E8251EC49BE5008836FA /* MAWTMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAWTMapViewController.h; sourceTree = "<group>"; };
 		1479E8261EC49BE5008836FA /* MAWTMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAWTMapViewController.m; sourceTree = "<group>"; };
 		1479E8281EC4B116008836FA /* MAWTTableTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAWTTableTableViewController.h; sourceTree = "<group>"; };
+		14A3595E1F0700BB0090933C /* bank01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bank01.png; sourceTree = SOURCE_ROOT; };
+		14A3595F1F0700BB0090933C /* bank02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bank02.png; sourceTree = SOURCE_ROOT; };
+		14A359601F0700BB0090933C /* bank03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bank03.jpg; sourceTree = SOURCE_ROOT; };
+		14A359641F070C820090933C /* route.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = route.png; sourceTree = SOURCE_ROOT; };
 		69E8FEA9799572FC1EC4CEB2 /* Pods-MapsAppWithTabs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapsAppWithTabs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapsAppWithTabs/Pods-MapsAppWithTabs.debug.xcconfig"; sourceTree = "<group>"; };
 		800C4A3B32D6C92961B84EB8 /* libPods-MapsAppWithTabs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapsAppWithTabs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE3BD47D59BEF13F3EFFC45C /* Pods-MapsAppWithTabs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapsAppWithTabs.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapsAppWithTabs/Pods-MapsAppWithTabs.release.xcconfig"; sourceTree = "<group>"; };
@@ -181,9 +189,13 @@
 				1479E7FE1EC49599008836FA /* AppDelegate.h */,
 				1479E7FF1EC49599008836FA /* AppDelegate.m */,
 				1479E8071EC49599008836FA /* Assets.xcassets */,
+				14A359641F070C820090933C /* route.png */,
 				1442BE281EEFD3D00078317D /* 65346.png */,
 				1442BE291EEFD3D00078317D /* list.png */,
 				1442BE2A1EEFD3D00078317D /* map.png */,
+				14A3595E1F0700BB0090933C /* bank01.png */,
+				14A3595F1F0700BB0090933C /* bank02.png */,
+				14A359601F0700BB0090933C /* bank03.jpg */,
 				1479E8091EC49599008836FA /* LaunchScreen.storyboard */,
 				1479E80C1EC49599008836FA /* Info.plist */,
 				1479E7FB1EC49599008836FA /* Supporting Files */,
@@ -326,7 +338,11 @@
 				1442BE2D1EEFD3D00078317D /* map.png in Resources */,
 				1442BE2B1EEFD3D00078317D /* 65346.png in Resources */,
 				1442BE2C1EEFD3D00078317D /* list.png in Resources */,
+				14A359621F0700BB0090933C /* bank02.png in Resources */,
+				14A359611F0700BB0090933C /* bank01.png in Resources */,
+				14A359651F070C820090933C /* route.png in Resources */,
 				1479E80B1EC49599008836FA /* LaunchScreen.storyboard in Resources */,
+				14A359631F0700BB0090933C /* bank03.jpg in Resources */,
 				1479E8081EC49599008836FA /* Assets.xcassets in Resources */,
 				1479E8061EC49599008836FA /* Main.storyboard in Resources */,
 			);
